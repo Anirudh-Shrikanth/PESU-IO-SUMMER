@@ -1,0 +1,8 @@
+"""Write a program to find the sum of the digits of a given number"""
+
+a=input("Enter a number")
+l=list(a)
+sum=0
+for i in l:
+    sum+=int(i)
+print("Sum of the digits is",sum)
