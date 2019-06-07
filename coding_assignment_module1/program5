@@ -1,0 +1,7 @@
+"""Write a program to check if a string is numeric or not"""
+
+a=input("Enter a string(preferencially a numeric one)")
+if a.isnumeric()==True:
+    print("The string is full of numbers")
+elif a.isnumeric()==False:
+    print("The sting is not numeric")
