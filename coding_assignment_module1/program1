@@ -1,0 +1,6 @@
+"""Enter comma separated numbers and make a list and a tuple out of them."""
+
+L=input("Enter the numbers separated by commas")
+l=L.split(",")
+print("The list is: ",l)
+print("The tuple is",tuple(l))
