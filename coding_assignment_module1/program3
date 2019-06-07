@@ -1,0 +1,26 @@
+"""Write a python program for binary search to search a number in the list of given numbers. 
+ If the number isn't present, give the appropriate message. Both the list and the number to be searched 
+ is given by the user. Learn more about binary search from geeksforgeek if required."""
+ 
+a=input("Enter comma separated numbers")
+L=a.split(",")
+L.sort()
+x=int(input("Enter a number to be found that exists in the list"))
+mid=int((0+len(L))/2)
+if mid%2!=0:
+    mid=int(1+len(L)/2)
+pos=-1
+found=0
+low=0
+high=len(L)
+while low<=high and found==0:
+    if x==L[mid]:
+        print("Element found at index:",index(mid))
+        found=1
+    elif x<L[mid]:
+        high=mid-1
+    else:
+        low=mid+1
+            
+if found!=0:
+    print("The element is not present")
